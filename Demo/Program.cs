@@ -65,6 +65,17 @@ namespace Demo
             //    Console.WriteLine(name);
             //}
             #endregion
+            #region Generic Collection - Sorted DS - SortedDictionary
+            //SortedDictionary<int, string> pairs = new SortedDictionary<int, string>();
+            //pairs.Add(1, "shimaa");//1
+            //pairs.Add(99, "ali");//4
+            //pairs.Add(3, "shimaa");//2
+            //pairs.Add(9, "shimaa");//3
+            //foreach (KeyValuePair<int, string> item in pairs)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
         }
     }
 }
