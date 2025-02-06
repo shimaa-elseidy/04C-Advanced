@@ -53,6 +53,18 @@ namespace Demo
             //    Console.WriteLine(item);
             //}
             #endregion
+            #region Generic Collection - HashSet
+            // Generic Collection - HashSet
+            //HashSet<string> names = new HashSet<string>();
+            //names.Add("shimaa");
+            //names.Add("shimaa"); // hashSet bt ignore el repeat
+            //names.Add("fatona");
+            //names.Add("esraa");
+            //foreach (var name in names)
+            //{
+            //    Console.WriteLine(name);
+            //}
+            #endregion
         }
     }
 }
