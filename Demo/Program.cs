@@ -76,6 +76,19 @@ namespace Demo
             //    Console.WriteLine(item);
             //}
             #endregion
+            #region Generic Collection - Sorted DS - SortedList - SortedSet
+            //SortedList<int, string> pairs = new SortedList<int, string>();
+            //pairs.Add(3, "shimaa");
+            //var item = pairs.GetKeyAtIndex(0);
+            //Console.WriteLine(item);// 3
+            //pairs.SetValueAtIndex(0, "salah");
+
+
+            //SortedSet<int> values = new SortedSet<int>();
+            //values.Add(1);
+            //values.Add(2);
+
+            #endregion
         }
     }
 }
