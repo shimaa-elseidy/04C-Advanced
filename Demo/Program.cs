@@ -89,6 +89,12 @@ namespace Demo
             //values.Add(2);
 
             #endregion
+            #region Event Overview
+            // Delegate :: C# feature 
+            // Event :: functions related to another functions called automatically
+            // 1. Functional programming 
+            // 2. Event driven programming
+            #endregion
         }
     }
 }
