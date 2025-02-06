@@ -40,6 +40,19 @@ namespace Demo
             //    Console.WriteLine(item);
             //}
             #endregion
+            #region Generic Collection [ Dictionary ]
+            //Dictionary<string, long> PhoneBook = new Dictionary<string, long>();
+            //PhoneBook.Add("shimaa", 015678009098765);
+            //PhoneBook.Add("ali", 0108996754009);
+            //// PhoneBook.Add(null, 015678009098765);// exception
+            //bool flag = PhoneBook.Remove("ali", out long result);// law el key mawgood hay3ml remove we b3deen hy assign el value ll result 
+            //Console.WriteLine(result);// 108996754009
+            //Console.WriteLine(flag); // true
+            //foreach (KeyValuePair<string,long> item in PhoneBook)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
         }
     }
 }
