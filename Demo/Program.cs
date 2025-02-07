@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using Demo.FIFA;
+using Demo.Youtube;
 
 namespace Demo
 {
@@ -97,17 +98,17 @@ namespace Demo
             // 2. Event driven programming
             #endregion
             #region Event EX01
-            Ball ball = new Ball() { Id = 1};
+            //Ball ball = new Ball() { Id = 1};
             //Console.WriteLine(ball); // id: 1 , Location:  (0 , 0 , 0)
-            ball.Location = new location() { X = 3, Y = 5 , Z = 4};
+            //ball.Location = new location() { X = 3, Y = 5 , Z = 4};
             //Console.WriteLine(ball); // id: 1 , Location:  (3 , 5 , 4)
 
-            Player P01 = new Player() { name = "Messi" , teamName = "Miami"} ;
-            Player P02 = new Player() { name = "Alba"  , teamName = "Miami" };
-            Player P03 = new Player() { name = "Pedri" , teamName = "Barcelona" };
-            Player P04 = new Player() { name = "Gavi"  , teamName  = "Barcelona" };
-            Refree R01 = new Refree() { name = "Ibrahim Nour El-Din" };
-            Coach  C01 = new Coach() { name = "Flek", teamName = "Barcelona" };
+            //Player P01 = new Player() { name = "Messi" , teamName = "Miami"} ;
+            //Player P02 = new Player() { name = "Alba"  , teamName = "Miami" };
+            //Player P03 = new Player() { name = "Pedri" , teamName = "Barcelona" };
+            //Player P04 = new Player() { name = "Gavi"  , teamName  = "Barcelona" };
+            //Refree R01 = new Refree() { name = "Ibrahim Nour El-Din" };
+            //Coach  C01 = new Coach() { name = "Flek", teamName = "Barcelona" };
             //ball.Players.Add(P01);
             //ball.Players.Add(P02);
             //ball.Players.Add(P03);
@@ -117,16 +118,31 @@ namespace Demo
 
             // Event btcreate fe Run Time :: invocation list (-=)(+=)
 
-            ball.BallLocationChanges += P01.Run;
-            ball.BallLocationChanges += P02.Run;
-            ball.BallLocationChanges += P03.Run;
-            ball.BallLocationChanges += P04.Run;
-            ball.BallLocationChanges += R01.look;
-            ball.BallLocationChanges += C01.Order;
+            //ball.BallLocationChanges += P01.Run;
+            //ball.BallLocationChanges += P02.Run;
+            //ball.BallLocationChanges += P03.Run;
+            //ball.BallLocationChanges += P04.Run;
+            //ball.BallLocationChanges += R01.look;
+            //ball.BallLocationChanges += C01.Order;
+            //ball.Location = new location() { X = 1, Y = 3, Z = 4 };
+            //Console.WriteLine(ball);
+            #endregion
+            #region Event EX02
+            //Channel channel = new Channel() { Title="ABC"};
+            //channel.AddVideo(new video() { Title = "Title011"  , Description = "Des01" });
+            //Subscribers S01 = new Subscribers() { Name = "SHIMAA"};
+            //Subscribers S02 = new Subscribers() { Name = "Ali" };
+            //Subscribers S03 = new Subscribers() { Name = "Fatema" };
+            //Subscribers S04 = new Subscribers() { Name = "Aesha" };
+            //channel.UploadVideo += S01.Notify;
+            //channel.UploadVideo += S02.Notify;
+            //channel.UploadVideo += S03.Notify;
+            //channel.UploadVideo += S04.Notify;
 
-            ball.Location = new location() { X = 1, Y = 3, Z = 4 };
-
-            Console.WriteLine(ball);
+            //channel.AddVideo(new video() { Title = "Title011", Description = "Des01" });
+            //Console.WriteLine("~~~~~~~~~~~~~~~~~~After Making UnSubscribe~~~~~~~~~~~~~~~~~~~~");
+            //channel.UploadVideo -= S01.Notify;
+            //channel.AddVideo(new video() { Title = "Title011", Description = "Des01" });
             #endregion
         }
     }

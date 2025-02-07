@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Demo.FIFA;
 
-namespace Demo
+namespace Demo.FIFA
 {
     internal class Player
     {
@@ -13,7 +12,7 @@ namespace Demo
         public string teamName { get; set; }
         public void Run(Ball ball)
         {
-            Console.WriteLine( $"Player {name} is running ...at {ball} ");
+            Console.WriteLine($"Player {name} is running ...at {ball} ");
         }
         public override string ToString()
         {
