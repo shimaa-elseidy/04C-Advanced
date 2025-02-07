@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Demo.FIFA;
 
 namespace Demo
 {
@@ -94,6 +95,38 @@ namespace Demo
             // Event :: functions related to another functions called automatically
             // 1. Functional programming 
             // 2. Event driven programming
+            #endregion
+            #region Event EX01
+            Ball ball = new Ball() { Id = 1};
+            //Console.WriteLine(ball); // id: 1 , Location:  (0 , 0 , 0)
+            ball.Location = new location() { X = 3, Y = 5 , Z = 4};
+            //Console.WriteLine(ball); // id: 1 , Location:  (3 , 5 , 4)
+
+            Player P01 = new Player() { name = "Messi" , teamName = "Miami"} ;
+            Player P02 = new Player() { name = "Alba"  , teamName = "Miami" };
+            Player P03 = new Player() { name = "Pedri" , teamName = "Barcelona" };
+            Player P04 = new Player() { name = "Gavi"  , teamName  = "Barcelona" };
+            Refree R01 = new Refree() { name = "Ibrahim Nour El-Din" };
+            Coach  C01 = new Coach() { name = "Flek", teamName = "Barcelona" };
+            //ball.Players.Add(P01);
+            //ball.Players.Add(P02);
+            //ball.Players.Add(P03);
+            //ball.Players.Add(P04);
+            //ball.refrees.Add(R01);
+
+
+            // Event btcreate fe Run Time :: invocation list (-=)(+=)
+
+            ball.BallLocationChanges += P01.Run;
+            ball.BallLocationChanges += P02.Run;
+            ball.BallLocationChanges += P03.Run;
+            ball.BallLocationChanges += P04.Run;
+            ball.BallLocationChanges += R01.look;
+            ball.BallLocationChanges += C01.Order;
+
+            ball.Location = new location() { X = 1, Y = 3, Z = 4 };
+
+            Console.WriteLine(ball);
             #endregion
         }
     }
